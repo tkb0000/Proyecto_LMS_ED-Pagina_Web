@@ -1,0 +1,88 @@
+:root {
+    --white: white;
+    --black: #0b0b0d;
+    --grey: slategrey;
+    --red: tomato;
+    --blue: navy;
+    --pink: hotpink;
+    --violet: violet;
+    --transparent-white: rgba(255, 255, 255, 0.25);
+    --transparent-blue: rgba(61, 13, 235, 0.25);
+    --transparent-violet: rgba(255, 0, 255, 0.25);
+
+    --nav-height: 4em;
+
+    --nav-font-size: 1.2em;
+}
+
+/* Establece que el ancho y el alto de un elemento sea la suma de su content, padding, border, margin y resto width/height  */
+* {
+    box-sizing: border-box;
+}
+
+/* La seleccion de la PAGINA ENTERA */
+*::selection {
+    color: var(--red);
+    background-color: var(--grey);
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: rubik;
+    background-color: var(--white);
+    margin: inherit;
+    padding: inherit;
+}
+
+.div-separator {
+    margin: 0;
+    padding: 0;
+    color: var(--transparent-blue);
+}
+
+/*
+    CAROUSEL STYLE START
+*/
+
+#carousel {
+    position: relative;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    flex-flow: column nowrap;
+
+    background-color: #000;
+}
+
+.carousel-img {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    object-fit: cover;
+    visibility: hidden;
+}
+
+.carousel-img-input {
+    margin: 5em;
+}
+
+.carousel-img-input:checked+*,
+.carousel-img-input:focus+* {
+    visibility: visible;
+}
+
+#carousel-dots {
+    display: block;
+    clear: both;
+}
+
+/*
+    CAROUSEL STYLE END
+*/
