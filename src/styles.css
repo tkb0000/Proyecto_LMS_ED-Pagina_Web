@@ -22,7 +22,7 @@
 
 /* La seleccion de la PAGINA ENTERA */
 *::selection {
-    color: var(--red);
+    color: var(--blue);
     background-color: var(--grey);
 }
 
@@ -44,7 +44,68 @@ body {
     color: var(--transparent-blue);
 }
 
+  /*
+    NAVBAR STYLE START
+  */
+
+#navbar {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: flex-start;
+
+    width: 100%;
+    height: var(--nav-height);
+    color: var(--grey);
+    background-color: var(--white);
+}
+
+.anim-fadeout {
+    transition-property: background-color;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in;
+}
+
+.anim-fadeout:hover {
+    background-color: var(--transparent-blue);
+    transition-property: background-color;
+    transition-duration: 0.1s;
+}
+
+.nav-comp-logo {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    position: relative;
+}
+
+#comp-logo {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% -50%);
+}
+
+.nav-button-div,
+.nav-comp-logo {
+    flex-grow: 1;
+    min-height: 100%;
+}
+
+.nav-button {
+    display: block;
+	color: var(--grey);
+	text-align: center;
+	text-decoration: none;
+    font-size: var(--nav-font-size);
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
+    padding: 1.1em;
+}
+
 /*
+    NAVBAR STYLE END
     CAROUSEL STYLE START
 */
 
