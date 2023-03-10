@@ -58,14 +58,14 @@ body {
 
     flex-flow: column nowrap;
 
-    background-color: #000;
+    background-color: var(--black);
 }
 
 .carousel-img {
+    height: 100%;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    object-fit: cover;
     visibility: hidden;
 }
 
