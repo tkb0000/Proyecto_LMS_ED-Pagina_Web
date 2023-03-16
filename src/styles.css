@@ -1,0 +1,43 @@
+body {
+
+    background: gray;
+    /*Color del fondo*/
+    color: black;
+    line-height: 20px;
+    /* distancia entre las letras   */
+    padding: 100px;
+    width: auto;
+
+}
+
+
+.trabajo {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+
+}
+
+.mission {
+    background-color: gray;
+    flex-direction: column;
+    display: flex;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+
+.vision {
+    background-color: gray;
+    flex-direction: column;
+    display: flex;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.img {
+    height: 100px;
+    width: 150px;
+    padding: 40px;
+}
